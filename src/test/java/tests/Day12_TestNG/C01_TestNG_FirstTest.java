@@ -1,4 +1,4 @@
-package tests.Day14_TestNG;
+package tests.Day12_TestNG;
 
 import org.testng.annotations.Test;
 //priority sayısı küçük olan önce çaılşır.
