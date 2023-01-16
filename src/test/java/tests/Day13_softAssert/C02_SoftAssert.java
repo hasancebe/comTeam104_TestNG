@@ -13,7 +13,7 @@ public class C02_SoftAssert {
         SoftAssert softAssert=new SoftAssert();
         AutomationExercise automationExercise=new AutomationExercise();
         //Test Case 1: Register User
-        automationExercise.loginButton.click();
+       // automationExercise.loginButton.click();
 
         //Test Case 2: Login User with correct email and password
         //Test Case 3: Login User with incorrect email and password
