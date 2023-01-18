@@ -21,8 +21,8 @@ public class QdPage {
     @FindBy(xpath = "(//*[text()='Sign Up'])[3]")
     public WebElement signUpButton;
 
-    @FindBy (xpath = "//button[text()='Login']")
-    public WebElement Login2;;
+    @FindBy (xpath = "(//button[@type='submit'])[2]")
+    public WebElement login2;
 
     @FindBy(xpath = "//*[@onclick='cookieAccept();']")
     public  WebElement cookies;

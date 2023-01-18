@@ -17,7 +17,8 @@ public class C02_NegativeTest {
         qdPage.email.sendKeys(ConfigReader.getProperty("qdInValidUserEmail"));
         qdPage.password.sendKeys(ConfigReader.getProperty("qdValidUserPassword"));
         qdPage.cookies.click();
-        qdPage.Login2.click();
+        ReusableMethods.wait(5);
+        qdPage.login2.click();
         Assert.assertTrue(qdPage.email.isDisplayed());
         Driver.closeDriver();
 
@@ -32,29 +33,31 @@ public class C02_NegativeTest {
 
     @Test
     public void wrongPassword(){
-        qdPage=new QdPage();
+       qdPage=new QdPage();
 
         Driver.getDriver().get(ConfigReader.getProperty("qdURL"));
         qdPage.logInButton.click();
         qdPage.email.sendKeys(ConfigReader.getProperty("qdUserValidEmail"));
         qdPage.password.sendKeys(ConfigReader.getProperty("qdInvalidPassword"));
-        //qdPage.cookies.click();
-        qdPage.Login2.click();
+        qdPage.cookies.click();
+        ReusableMethods.wait(5);
+        qdPage.login2.click();
         Assert.assertTrue(qdPage.email.isDisplayed());
         Driver.closeDriver();
 
     }
-
+//    QdPage
     @Test
     public void wrongPasswordAndEmail(){
-        qdPage=new QdPage();
 
+        qdPage=new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdURL"));
         qdPage.logInButton.click();
         qdPage.email.sendKeys(ConfigReader.getProperty("qdInValidUserEmail"));
         qdPage.password.sendKeys(ConfigReader.getProperty("qdInvalidPassword"));
         qdPage.cookies.click();
-        qdPage.Login2.click();
+        ReusableMethods.wait(5);
+        qdPage.login2.click();
         Assert.assertTrue(qdPage.email.isDisplayed());
         Driver.closeDriver();
 
