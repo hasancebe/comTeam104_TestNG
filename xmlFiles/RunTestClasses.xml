@@ -6,8 +6,15 @@
         <classes>
         <class name="tests.Day12_TestNG.C03_NutellaTestWithTestNG"></class>
         <class name="tests.Day14_POM.C01_PositiveLoginTest"></class>
+            <class name="tests.Day14_POM.C02_NegativeTest"></class>
 
 
         </classes>
+
     </test>
+<test name="include_exclude example">
+    <packages>
+
+    </packages>
+</test>
 </suite>

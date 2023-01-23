@@ -10,7 +10,7 @@ import utilities.ReusableMethods;
 public class C02_NegativeTest {
     QdPage qdPage=new QdPage();
     @Test
-    public void wrongMailTest() throws InterruptedException {
+    public void wrongMailTest()  {
 
         Driver.getDriver().get(ConfigReader.getProperty("qdURL"));
         qdPage.logInButton.click();
